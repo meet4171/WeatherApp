@@ -1,0 +1,94 @@
+  @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Chivo+Mono&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      background: url('backgrounImage.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+  }
+
+  .nav-container {
+      box-shadow: 3px 10px 6px #0a0a0a96;
+      background: radial-gradient(#a9a9a978, transparent);
+  }
+
+  .navbar-brand {
+      font-family: 'Chivo Mono', monospace;
+  }
+
+  #input-container {
+      background: linear-gradient(224deg, #0f2fcd6b, transparent);
+      color: white;
+      box-shadow: 0px 5px 8px 0px #000000d1;
+      transition: all .3s linear;
+      border-radius: 30px 30px 30px 30px;
+      font-family: 'Anuphan', sans-serif;
+
+  }
+
+  #input-container:hover {
+      transition: all .3s linear;
+      box-shadow: 0px 17px 20px 3px #000000d1;
+
+  }
+
+  #input-container .show-error {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  #button-addon2 img {
+      height: 20px;
+      width: 20px;
+
+  }
+
+  #name {
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+
+
+
+  #celcius::after,
+  #minTemp::after,
+  #maxTemp::after {
+      content: "Current";
+      position: relative;
+      font-size: 20px;
+      top: 23px;
+      left: -84px;
+
+  }
+
+  #minTemp::after {
+      content: "Mimimum";
+  }
+
+  #maxTemp::after {
+      content: "Maximum";
+  }
+
+  #weatherName {
+      font-size: 35px;
+
+  }
+
+  #weatherDesc {
+      font-size: 20px;
+      white-space: pre;
+
+  }
+
+  .hide-on-error {
+      display: none;
+  }
